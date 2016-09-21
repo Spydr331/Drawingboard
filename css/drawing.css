@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  	background-color: #ffffff; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 14px; color: #555;
+    -webkit-font-smoothing: antialiased; -webkit-overflow-scrolling: touch;
+}
+
+/* Drawing */
+.draw-canvas-area{
+	position:relative; margin:0 auto; border-radius: 4px;
+	-webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25); -moz-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25); box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25);
+}
+
+.draw-canvas-area .btn-brush{border:1px solid #ddd;}
+
+.draw-palette{position:absolute;}
+
+.draw-save{position:absolute; top:0px; right:0px;}
+
+.draw-print{position:absolute; top:35px; right:0px;}
+
+.draw-clear{position:absolute; bottom:0px; right:0px;}
+
+.draw-swatches{position:relative; height:100px}
+.draw-swatches a{position:absolute; display:block; width:20px; height:20px; padding:1px;}
+.draw-swatches span{display:block; width:100%; height:100%; border-radius:4px;}
+.draw-swatches a.draw-swA{left:0px;}
+.draw-swatches a.draw-swB{left:20px;}
+.draw-swatches a.draw-swC{left:40px;}
+.draw-swatches a.draw-swD{left:60px;}
+.draw-swatches a.draw-swZ{top:0px;}
+.draw-swatches a.draw-swY{top:20px;}
+.draw-swatches a.draw-swX{top:40px;}
+.draw-swatches a.draw-swW{top:60px;}
+
+.draw-swA.draw-swZ span{background:#000000;}
+.draw-swB.draw-swZ span{background:#ffffff;}
+.draw-swC.draw-swZ span{background:#d5d5d5;}
+.draw-swD.draw-swZ span{background:#797979;}
+.draw-swA.draw-swY span{background:#AC1500;}
+.draw-swB.draw-swY span{background:#FF2700;}
+.draw-swC.draw-swY span{background:#FED8FF;}
+.draw-swD.draw-swY span{background:#FF29A5;}
+.draw-swA.draw-swX span{background:#3BD100;}
+.draw-swB.draw-swX span{background:#007500;}
+.draw-swC.draw-swX span{background:#80D8FF;}
+.draw-swD.draw-swX span{background:#0170FE;}
+.draw-swA.draw-swW span{background:#FFFC01;}
+.draw-swB.draw-swW span{background:#FFA800;}
+.draw-swC.draw-swW span{background:#AB7900;}
+.draw-swD.draw-swW span{background:#A838FF;}
+
+.draw-brushes{position:relative; display:block; width:80px; height:80px;}
+.draw-brushes a{display:block; position:absolute; padding:1px;}
+.draw-brushes span{border-radius:30px; display:block; background:#666; margin:0 auto;}
+.draw-brush1{width:27px; height:20px; left:0; top:0;}
+.draw-brush2{width:26px; height:20px; left:27px; top:0;}
+.draw-brush3{width:27px; height:20px; left:53px; top:0;}
+.draw-brush4{width:40px; height:40px; left:0; top:20px;}
+.draw-brush5{width:40px; height:40px; left:40px; top:20px;}
+.draw-brush1 span{width:4px; height:4px; margin-top:7px;}
+.draw-brush2 span{width:10px; height:10px; margin-top:3px;}
+.draw-brush3 span{width:16px; height:16px; margin-top:0px;}
+.draw-brush4 span{width:20px; height:20px; margin-top:8px;}
+.draw-brush5 span{width:28px; height:28px; margin-top:4px;}
+
+.draw-stamps{position:relative; width:80px;}
+.draw-stamps a{display:block; width:80px; height:80px;}
+.draw-stamps a img{width:40px; height:40px; margin:15px 0 0 0;}
+
+.draw-erases{height:50px;}
+.draw-canvas{cursor: crosshair;}
+
+.selected{border-color:green !important; z-index:10;}

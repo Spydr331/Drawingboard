@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="pl">
+	<head>
+		<title>Web Drawing - Mike Feola.NET</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+		<link rel="stylesheet" href="css/drawing.css" media="all" />
+
+		<!-- End Pattern Lab -->
+
+	</head>
+	<body class="body">
+		<div class="wrapper">
+			<div class="container">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<div class="draw-canvas-area">
+						<div class="draw-palette">
+							<div class="draw-swatches">
+								<a href="#000000" class="btn btn-brush draw-swA draw-swZ active"><span></span></a>
+								<a href="#ffffff" class="btn btn-brush draw-swB draw-swZ"><span></span></a>
+								<a href="#d5d5d5" class="btn btn-brush draw-swC draw-swZ"><span></span></a>
+								<a href="#797979" class="btn btn-brush draw-swD draw-swZ"><span></span></a>
+								<a href="#AC1500" class="btn btn-brush draw-swA draw-swY"><span></span></a>
+								<a href="#FF2700" class="btn btn-brush draw-swB draw-swY"><span></span></a>
+								<a href="#FED8FF" class="btn btn-brush draw-swC draw-swY"><span></span></a>
+								<a href="#FF29A5" class="btn btn-brush draw-swD draw-swY"><span></span></a>
+								<a href="#3BD100" class="btn btn-brush draw-swA draw-swX"><span></span></a>
+								<a href="#007500" class="btn btn-brush draw-swB draw-swX"><span></span></a>
+								<a href="#80D8FF" class="btn btn-brush draw-swC draw-swX"><span></span></a>
+								<a href="#0170FE" class="btn btn-brush draw-swD draw-swX"><span></span></a>
+								<a href="#FFFC01" class="btn btn-brush draw-swA draw-swW"><span></span></a>
+								<a href="#FFA800" class="btn btn-brush draw-swB draw-swW"><span></span></a>
+								<a href="#AB7900" class="btn btn-brush draw-swC draw-swW"><span></span></a>
+								<a href="#A838FF" class="btn btn-brush draw-swD draw-swW"><span></span></a>
+							</div>
+							<div class="draw-brushes">
+								<a href="#2" class="btn btn-brush draw-brush1 active"><span></span></a>
+								<a href="#5" class="btn btn-brush draw-brush2"><span></span></a>
+								<a href="#8" class="btn btn-brush draw-brush3"><span></span></a>
+								<a href="#10" class="btn btn-brush draw-brush4"><span></span></a>
+								<a href="#14" class="btn btn-brush draw-brush5"><span></span></a>
+							</div>
+							<div class="draw-erases">
+								<a href="#" class="btn btn-brush">Eraser</a>
+							</div>
+							<div class="draw-stamps">
+								<a href="#" class="btn btn-brush"><img src="images/smile.png" /></a>
+							</div>
+						</div>
+						<a class="draw-save btn btn-primary">Save</a>
+						<a class="draw-print btn btn-primary">Print</a>
+						<a class="draw-clear btn btn-danger">Clear</a>
+						<canvas id="draw-canvas" class="draw-canvas"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/drawing.js" ></script>
+	</body>
+</html>
